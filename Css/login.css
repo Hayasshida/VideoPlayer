@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pequenos (Celular em pé, 576px e maior) */
+@media (max-width: 767px) {
+    body{
+        background: #3dff1b;
+    }
+    #main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #B7407C, #5A5BE8);
+
+    }
+    section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        width: 100%;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+        color: #fff;
+    }
+    .campo{
+        width: 90%;
+        height: 50px;
+        margin-left: 5%;
+        margin-top: 35px;
+        border: 0;
+        outline: none;
+        border-radius: 10px;
+        text-indent: 8px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color:#333;
+        font-size: 1.3em;
+    }
+    .campo:focus{
+        background: #ccc;
+    }
+    .cont-button{
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        width: 80%;
+        height: 50px;
+        margin-top: 40px;
+        border: 0;
+        border-radius: 18px;
+        background: #F20079;
+        color: #fff;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+    p{
+        color: #fff;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 0.8em;
+        margin-top: 55%;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+}
+
+/* médios (tablets e celular deitado, 768px e maior) */
+@media (min-width: 768px) {
+    body{
+        background: #1137e2;
+    }
+}
+
+/* Grandes (hd desktops, 992px e maior) */
+@media (min-width: 992px) {
+    body{
+        background: #e02f2f;
+    }
+}
+
+/* Maiores (full hd desktops, 1200px e maior) */
+@media (min-width: 1200px) {
+    body{
+        background: #909090;
+    }
+}

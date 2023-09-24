@@ -1,0 +1,447 @@
+@media (min-width: 300px){
+    body{
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: whitesmoke;
+    }
+
+    .logo{
+        width: 128px;
+        height: 91.72px;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    .center-out{
+        width: 32px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    .out{
+        width: 32px;
+        height: 32px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 91.72px;
+    }
+
+    .bar{
+        width: 100%;
+        height: 1.5px;
+        background-color: #6b6b6b;
+    }
+
+    .cont-video{
+        width: 96%;
+        height: 200px;
+        padding: 2% 2% 2% 2%;
+        background-color: white;
+        
+    }
+
+    .actions{
+        display: flex;
+        height: 108.9px;
+        padding-top: 2%;
+    }
+
+    .thumb{
+        margin-left: 2%;
+    }
+
+    .curso-img{
+        width: 70px;
+        border: 2.5px solid #6b6b6b;
+        background-color: white;
+        padding: 2.5px;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .title{
+        margin-left: 6%;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .nome{
+        margin-top: 0;
+        margin-left: 6%;
+    }
+
+    .categoria{
+        margin-left: 4%;
+        border: 2px solid #6b6b6b;
+        background-color: #444444;
+        color: white;
+        padding: 0 5px 1px 5px;
+        border-radius: 15px;
+    }
+
+    .info{
+        float: right;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12%;
+    }
+
+    .img-info{
+        width: 32px;
+        height: 32px;
+    }
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .buttons img{
+        width: 32px;
+        height: 32px;
+        margin-bottom: 7%;
+    }
+
+    section{
+        padding-top: 7%;
+    }
+
+    .comentarios{
+        height: 100px;
+        border-radius: 15px;
+        background-color: #444444;
+        margin: 0 2% 0 2%;
+        overflow: hidden;
+        color: white;
+    }
+
+    .plus{
+        height: 24px;
+        width: 24px;
+        margin-top: 2%;
+        margin-right: 2%;
+        border-radius: 100%;
+        background-color: #6b6b6b;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comentarios .bar{
+        height: 3px;
+    }
+
+    .comentarios h3{
+        text-align: left;
+        margin: 0;
+        margin-left: 4%;
+        padding: 2px 0 2px 0;
+    }
+
+    .profile{
+        background-image: url(../Img/profile.png);
+        background-size: cover;
+        background-position:  0 0 0 0;
+        height: 32px;
+        width: 32px;
+        display: block;
+        float: left;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 100%;
+        border: 1px solid blue;
+    }
+
+    .user-comment{
+        width: 300px;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .user{
+        margin-bottom: 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .comment-text{
+        margin: 0;
+        margin-left: 2%;
+        font-size: 12px;
+    }
+
+    .descricao{
+        position: absolute;
+        width: 100vw;
+        height: 55%;
+        top: 45%;
+        background-color: #444444;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        display: flex;
+    }
+
+    .descricao.hidden{
+        opacity: 0;
+        height: 1px;
+        transition: all 500ms;
+        overflow: hidden;
+    }
+
+    .descricao.show{
+        opacity: 1;
+        height: 53.5%;
+        transition: all 500ms;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .descricao .bar.fechar{
+        background-color: white;
+        width: 10%;
+    }
+
+    .descricao h3{
+        margin-right: auto;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .desc{
+        margin-left: 4%;
+        text-align: justify;
+        text-indent: 20px;
+        margin-right: 8%;
+    }
+
+    .comp{
+        position: absolute;
+        width: 100vw;
+        height: 53.5%;
+        top: 45%;
+        background-color: #444444;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        display: flex;
+    }
+
+    .comp.hidden{
+        opacity: 0;
+        height: 1px;
+        transition: all 500ms;
+        overflow: hidden;
+    }
+
+    .comp.show{
+        opacity: 1;
+        height: 53.5%;
+        transition: all 500ms;
+    }
+
+    .comp .bar.fecha{
+        background-color: white;
+        width: 10%;
+        height: 2px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .comp h3{
+        margin-right: auto;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .redes{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        gap: 60px;
+    }
+
+    .icons2{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        gap: 60px;
+    }
+
+    .whats{
+        height: 64px;
+        width: 64px;
+    }
+
+    .insta{
+        height: 64px;
+        width: 64px;
+    }
+
+    .facebook{
+        height: 64px;
+        width: 64px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .twitter{
+        height: 64px;
+        width: 64px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .exp-com{
+        position: absolute;
+        width: 100vw;
+        height: 53.5%;
+        top: 45%;
+        background-color: #444444;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        display: flex;
+        overflow: scroll;
+    }
+
+    .exp-com .bar.fecha2{
+        background-color: white;
+        width: 10%;
+        height: 2px;
+        position: fixed;
+    }
+
+    .exp-com h3{
+        margin-right: auto;
+        margin-left: 2%;
+
+    }
+
+    .exp-com.hidden{
+        opacity: 0;
+        height: 1px;
+        transition: all 500ms;
+        overflow: hidden;
+    }
+
+    .exp-com.show{
+        opacity: 1;
+        height: 53.5%;
+        transition: all 500ms;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .exp-com .comentario{
+        display: inherit;
+    }
+
+    .exp-com .comentarios-abr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+    }
+
+    .form{
+        margin-top: 10px;
+        margin-bottom: 2%;
+        width: 98%;
+        background-color: rgba(211, 211, 211, 0.671);
+        border-radius: 15px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .campo{
+        margin-left: 2%;
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid #6b6b6b;
+        background-color: transparent;
+        transition: all 200ms;
+    }
+
+    .campo:focus{
+        border-bottom: 1px solid #0287c3;
+        outline: none;
+        transition: all 200ms;
+    }
+
+    .send{
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .enviar{
+        border: none;
+        background-color: transparent;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    .user-comment2{
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .user2{
+        margin-bottom: 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        top: -8px;
+        left: 42px;
+    }
+
+    .comment-text2{
+        margin: 0;
+        margin-left: 2%;
+        font-size: 12px;
+        color: white;
+        margin-bottom: 20%;
+    }
+
+}
